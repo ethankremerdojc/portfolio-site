@@ -1,0 +1,38 @@
+.card {
+  background: var(--surface-background);
+
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+
+  border: 1px solid var(--surface-border);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+}
+
+.card__header {
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--surface-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.card__title {
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  margin: 0;
+}
+
+.card__body {
+  color: var(--text-primary);
+  padding: var(--spacing-sm) 0;
+}
+
+.card__footer {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--surface-border);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}

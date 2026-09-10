@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-text);
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+
+  background-color: #080b0e;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(0, 240, 255, 0.35) 1.5px, transparent 0),
+    radial-gradient(circle at 1px 1px, rgba(217, 70, 239, 0.4) 2px, transparent 0),
+    radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.07) 0%, transparent 70%);
+  background-size:
+    32px 32px,
+    96px 96px,
+    100% 100%;
+  background-position:
+    0 0,
+    16px 16px,
+    center center;
+  background-attachment: fixed;
+}
+
+app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+  max-width: min(100vw, 1200px);
+  width: 100%;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+/* ========================================== */
+/* HERO SECTION */
+/* ========================================== */
+
+#hero-section {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.hero-card .card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: var(--font-size-2xl);
+    font-weight: bold;
+  }
+}
+
+.glowing-text {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.35))
+          drop-shadow(0 0 12px rgba(217, 70, 239, 0.25));
+}
+
+.hero-info-cards {
+  display: flex;
+  gap: var(--spacing-md);
+  width: 100%;
+
+  .info-card {
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+
+    h3 {
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      font-size: var(--font-size-sm);
+      color: var(--color-text-dim);
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: var(--font-size-lg);
+    }
+
+    p {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-dim);
+    }
+  }
+}
+
+/* ========================================== */
+/* WORK SECTION */
+/* ========================================== */
+
+.work-card {
+  padding: 0 var(--spacing-md) !important;
+
+  .card__body {
+    padding: 0;
+  }
+}
+
+.work-experience-block {
+  position: relative;
+
+  .work-experience-block-img {
+    position: absolute;
+    background: var(--surface-background-full);
+    top: 2rem;
+    left: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .work-experience-block-content {
+    padding: var(--spacing-lg) 0;
+    margin-left: 2rem;
+    padding-left: 2.5rem;
+    border-left: solid var(--color-text-dim) 1px;
+    padding-bottom: var(--spacing-md);
+  }
+
+  h4, h3, li {
+    color: var(--color-text-dim);
+  }
+
+  h4, h3 {
+    font-size: var(--font-size-sm);
+  }
+
+  h3 {
+    font-style: italic;
+  }
+
+  .employer-info {
+    margin-bottom: var(--spacing-md);
+  }
+
+  ul {
+    padding-inline-start: var(--spacing-xl);
+  }
+
+  li {
+    margin: var(--spacing-xs) 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
