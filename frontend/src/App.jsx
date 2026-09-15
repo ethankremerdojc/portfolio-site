@@ -165,9 +165,43 @@ function App() {
         </section>
 
         <section id="stack">
+
           <h1>Current Technologies</h1>
+
           <div className="stack-grid">
-            <p>Stack grid here</p>
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
+
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
+            <Card className="stack-item">
+              <div className="stack-item-icon">ICON</div>
+              <div className="stack-item-title">Python</div>
+            </Card>
           </div>
         </section>
 
@@ -181,8 +215,19 @@ function App() {
               Hexgame
             </Card>
           </div>
-
         </section>
+
+        <section id="connect">
+          <div className="connect-cards">
+            <Card className="connect-card">
+              Connect with ethan
+            </Card>
+            <Card className="connect-card">
+              Send a message
+            </Card>
+          </div>
+        </section>
+
       </div>
 
       <Footer />
