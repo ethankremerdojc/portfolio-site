@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  background: black;
+  padding: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-inner {
+  max-width: min(100vw, 1200px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
