@@ -5,6 +5,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Card from "@/components/Card/Card";
 import TextIcon from "@/components/TextIcon/TextIcon"
+import Button from "@/components/Button/Button"
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
 
       <div className="app-body">
         <section id="hero-section">
-          <Card className="hero-card">
+          <Card className="hero-card" spacing="xl">
             <div className="hero-text">
               <h1>Hi, I'm</h1>
               <h1 className="glowing-text">Ethan</h1>
@@ -55,44 +56,41 @@ function App() {
 
           </Card>
 
-          <Card className="hero-card">
-            <div className="hero-text">
-              <h1>Hi, I'm</h1>
-              <h1 className="glowing-text">Ethan</h1>
+          <Card className="about-me-card" spacing="xl">
+            <div className="about-me-title">
+              <h2>About me</h2>
+              <h3>Medicine Hat, AB // Remote</h3>
             </div>
-
-            <p className="hero-body">
-              Full Stack Developer & Systems Builder with over 6 years of
-              experience engineering reliable web architectures, high-
-              performance backends in Python & Django, and delight-
-              inducing interactive systems.
-            </p>
 
             <hr />
 
-            <div className="hero-info-cards">
-              <div className="info-card info-card-experience">
-                <h3>Experience</h3>
-                <h2>6+ Years</h2>
-                <p>Active Production</p>
-              </div>
-
-              <div className="info-card info-card-primary">
-                <h3>Preferred Stack</h3>
-                <h2>Python</h2>
-                <p>Django, React, ...</p>
-              </div>
-
-              <div className="info-card info-card-stack">
-                <h3>Stack</h3>
-                <h2>Full Stack</h2>
-                <p>Docker, TS, Linux</p>
-              </div>
+            <div className="about-me-body">
+              <p>Hello world! I'm Ethan Kremer.</p>
+              <p>
+              I am a software developer with over five
+              years of experience building reliable web
+              applications and backend systems. My
+              primary experience is in Python, particularly
+              with Django, though I am comfortable
+              working across the stack from server
+              configuration to systems building, from
+              structuring applications to improving
+              performance and development workflows.
+              </p>
+              <p>
+              I am passionate about creating well-
+              designed, maintainable software that solves
+              real problems, but I also love building fun and
+              'useless' things that make people smile and
+              laugh.
+              </p>
             </div>
-
-            <div className="hero-ctas">
-            </div>
-
+            <Button
+              href="#contact"
+              className="about-me-contact-button"
+            >
+              Contact Me
+            </Button>
           </Card>
         </section>
 

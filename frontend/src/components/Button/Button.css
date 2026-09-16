@@ -8,6 +8,9 @@
   transition: all 0.2s ease;
   cursor: pointer;
   border: none;
+
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
 }
 
 .button-type-default {

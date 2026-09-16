@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ children, title, footer, className='' }) => {
+const Card = ({ children, title, footer, spacing='md', className='' }) => {
   return (
-    <div className={`card ${className}`}>
+    <div className={`card card-spacing-${spacing} ${className}`}>
       {title &&
         <div className="card__header">
           <h2 className="card__title">{title}</h2>

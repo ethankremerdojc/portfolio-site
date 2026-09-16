@@ -9,7 +9,18 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
 
   border-radius: var(--radius-lg);
+}
+
+.card-spacing-md {
   padding: var(--spacing-md);
+}
+
+.card-spacing-lg {
+  padding: var(--spacing-lg);
+}
+
+.card-spacing-xl {
+  padding: var(--spacing-xl);
 }
 
 .card__header {
@@ -26,7 +37,6 @@
 
 .card__body {
   color: var(--text-primary);
-  padding: var(--spacing-sm) 0;
 }
 
 .card__footer {

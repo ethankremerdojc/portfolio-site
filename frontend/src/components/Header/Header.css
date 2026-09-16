@@ -15,14 +15,27 @@
   justify-content: space-between;
 }
 
-.header-title {
+.header-title, .header-contact-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: var(--spacing-md);
 }
 
 .header-title-block {
   display: flex;
   flex-direction: column;
+
+  h3 {
+    font-size: var(--font-size-md);
+  }
+
+  h4 {
+    color: var(--color-primary);
+    font-weight: 200;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-mono);
+  }
 }
 
 .header-nav {

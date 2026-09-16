@@ -1,10 +1,11 @@
 .footer {
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.6);
   padding: var(--spacing-md);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid var(--surface-border);
 }
 
 .footer-inner {

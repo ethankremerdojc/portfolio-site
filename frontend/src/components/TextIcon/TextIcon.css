@@ -1,7 +1,4 @@
 .text-icon {
-
-  
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -40,23 +37,28 @@
 
 
 .text-icon-blue {
-  border-color: var(--color-primary);
+  border-color: color-mix(in srgb, var(--color-primary) 65%, transparent);
 
   background:
     radial-gradient(
-      circle at 50% 45%,
+      circle at 50% 50%,
       color-mix(in srgb, var(--color-primary) 14%, transparent),
-      color-mix(in srgb, var(--color-primary) 5%, transparent) 45%,
-      transparent 75%
-    ),
-    var(--surface-background);
+      color-mix(in srgb, var(--color-primary) 5%, transparent) 25%,
+      transparent 70%
+    );
+
 
   box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.45),
+    0 12px 40px rgba(0, 0, 0, 0.35),
     0 0 40px color-mix(in srgb, var(--color-primary) 20%, transparent),
-    inset 0 0 50px color-mix(in srgb, var(--color-primary) 12%, transparent);
+    inset 0 0 50px color-mix(in srgb, var(--color-primary) 15%, transparent);
 
   span {
     color: var(--color-primary);
+    filter: drop-shadow(0 0 1px rgba(0, 240, 255, 0.35));
+
+    /* margin left because it moves the text left for some reason */
+    letter-spacing: 2px;
+    margin-left: 2px;
   }
 }
