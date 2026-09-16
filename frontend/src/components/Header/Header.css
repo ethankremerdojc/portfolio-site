@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid var(--surface-border);
   padding: var(--spacing-md);
   display: flex;
   justify-content: center;
@@ -12,4 +13,34 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.header-title {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.header-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-nav {
+  display: flex;
+  gap: var(--spacing-sm);
+
+  border: 1px solid var(--surface-border);
+  background: var(--surface-background);
+
+
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: block;
+    padding: 0 var(--spacing-lg);
+    text-decoration: none;
+    font-weight: 500;
+  }
 }

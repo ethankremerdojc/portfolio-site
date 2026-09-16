@@ -1,4 +1,5 @@
 import TextIcon from '@/components/TextIcon/TextIcon';
+import Button from '@/components/Button/Button';
 
 import './Header.css';
 
@@ -27,7 +28,11 @@ export default function Header() {
         </div>
 
         <div className="header-contact-item">
-          <a href="#">Get in touch</a>
+          <Button
+            href="#"
+          >
+            Get in touch
+          </Button>
         </div>
       </div>
     </div>

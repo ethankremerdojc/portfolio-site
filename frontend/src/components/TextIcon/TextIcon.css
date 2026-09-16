@@ -8,22 +8,23 @@
 
   box-sizing: border-box;
 
-  border: 2px solid var(--surface-border);
+  border: 1px solid var(--surface-border);
   border-radius: 14px;
 
   span {
     display: block;
 
     font-size: var(--font-size-xl);
+    line-height: var(--font-size-xl);
+
     font-weight: 600;
-    line-height: 1;
 
     color: var(--surface-border);
   }
 }
 
 .text-icon-medium {
-  --size: calc(1.7 * var(--font-size-xl));
+  --size: calc(1.5 * var(--font-size-xl));
 
   width: var(--size);
   height: var(--size);
@@ -31,7 +32,7 @@
   border-radius: calc(var(--size) / 3);
 
   span {
-    font-size: calc(var(--size) / 2.5)
+    font-size: calc(var(--size) / 2.4)
   }
 }
 

@@ -1,0 +1,33 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.button-type-default {
+  background-color: var(--surface-background);
+  border: 1px solid var(--surface-border);
+  color: var(--surface-border);
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 900px) {
+  .btn {
+    padding: 0.3rem 0.8rem;
+  }
+}
