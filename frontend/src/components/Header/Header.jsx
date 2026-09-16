@@ -1,3 +1,5 @@
+import TextIcon from '@/components/TextIcon/TextIcon';
+
 import './Header.css';
 
 export default function Header() {
@@ -6,7 +8,9 @@ export default function Header() {
       <div className="header-inner">
         <div className="header-title">
           <div className="header-icon">
-            ICON
+            <TextIcon
+              text="EK"
+            />
           </div>
           <div className="header-title-block">
             <h3>Ethan Kremer</h3>

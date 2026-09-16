@@ -4,6 +4,7 @@ import './App.css'
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Card from "@/components/Card/Card";
+import TextIcon from "@/components/TextIcon/TextIcon"
 
 function App() {
 
@@ -170,7 +171,10 @@ function App() {
 
           <div className="stack-grid">
             <Card className="stack-item">
-              <div className="stack-item-icon">ICON</div>
+              <TextIcon
+                className="stack-item-icon"
+                text="PY"
+              />
               <div className="stack-item-title">Python</div>
             </Card>
             <Card className="stack-item">
