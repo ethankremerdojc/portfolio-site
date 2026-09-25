@@ -31,7 +31,7 @@ body {
   background-attachment: fixed;
 }
 
-app {
+.dot-matrix-bg {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,10 +42,10 @@ app {
 .app-body {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2xl);
+  gap: var(--spacing-3xl);
   max-width: min(100vw, 1200px);
   width: 100%;
-  margin: var(--spacing-2xl) 0;
+  margin: var(--spacing-3xl) 0;
 }
 
 .app-body section {
@@ -250,12 +250,15 @@ p {
     flex-direction: row;
     gap: var(--spacing-lg);
 
-    .project-card {
-      width: 100%;
-    }
+    /* .project-card { */
+    /*   width: 50%; */
+    /* } */
   }
 }
 
+.project-img {
+  width: 100%;
+}
 
 .connect-cards {
   width: 100%;

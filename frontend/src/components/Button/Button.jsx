@@ -18,7 +18,7 @@ const Button = ({
       style={disabled ? { opacity: 0.5, cursor: 'not-allowed', pointerEvents: 'none' } : {}}
       {...props}
     >
-      { href ? <a href={href}>{children}</a> : {children} }
+      { href ? <a href={href}>{children}</a> : children }
     </button>
   )
 };
